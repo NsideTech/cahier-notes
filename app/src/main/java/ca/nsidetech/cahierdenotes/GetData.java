@@ -14,7 +14,7 @@ import java.util.List;
 
 public class GetData extends AsyncTask<String, String, String> {
     private List<Matiere> matieres = new ArrayList<>();
-    String msg = "";
+    String msg = "test";
     private final Context context;
     private final ListView myListView;
 
