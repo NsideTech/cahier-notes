@@ -1,27 +1,50 @@
 package ca.nsidetech.cahierdenotes;
 
-public class Matiere {
-    private String nom;
-    private int note;
+import java.io.Serializable;
 
-    public Matiere(String nom, int note) {
-        this.nom = nom;
-        this.note = note;
+public class Matiere implements Serializable {
+
+    private Long Id;
+    private String studentName;
+    private String courseName;
+    private double noteStudents;
+
+    public Matiere(Long id, String studentName, String courseName, double noteStudents) {
+        Id = id;
+        this.studentName = studentName;
+        this.courseName = courseName;
+        this.noteStudents = noteStudents;
     }
 
-    public String getNom() {
-        return nom;
+    public Long getId() {
+        return Id;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setId(Long id) {
+        Id = id;
     }
 
-    public int getNote() {
-        return note;
+    public String getStudentName() {
+        return studentName;
     }
 
-    public void setNote(int note) {
-        this.note = note;
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public double getNoteStudents() {
+        return noteStudents;
+    }
+
+    public void setNoteStudents(double noteStudents) {
+        this.noteStudents = noteStudents;
     }
 }
