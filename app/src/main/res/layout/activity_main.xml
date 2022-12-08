@@ -40,7 +40,8 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Nom de l'étudiant" />
+                android:text="Nom de l'étudiant"
+                android:textColor="#E91E63" />
 
             <EditText
                 android:id="@+id/edtStudentName"
@@ -60,13 +61,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Nom de la matiére" />
+                android:text="Nom de la matiére"
+                android:textColor="#E91E63" />
 
             <EditText
                 android:id="@+id/edtCourseName"
@@ -85,13 +88,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Note de l'étudiant" />
+                android:text="Note de l'étudiant"
+                android:textColor="#E91E63" />
 
             <EditText
                 android:id="@+id/edtStudentNote"
@@ -117,6 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Sauvegarder" />
+
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

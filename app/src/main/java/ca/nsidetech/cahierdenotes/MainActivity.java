@@ -16,11 +16,27 @@ public class MainActivity extends AppCompatActivity {
     private EditText edtCourseName;
     private EditText edtStudentName;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        liaison();
+    }
+
+    private void liaison() {
+        btnSauvegarder = findViewById(R.id.btnSauvegarderNote);
+        edtStudentName = findViewById(R.id.edtStudentName);
+        edtCourseName = findViewById(R.id.edtCourseName);
+        edtNoteStudent = findViewById(R.id.edtStudentNote);
+
+        btnSauvegarder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
 }
