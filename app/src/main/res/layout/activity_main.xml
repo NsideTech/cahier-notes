@@ -23,7 +23,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Cahiers de Note Enseingnats College O'sullivan"
+                android:text="Cahiers de Note Enseignants College O'sullivan"
                 android:textColor="#E91E63"
                 android:textSize="34sp" />
         </LinearLayout>
