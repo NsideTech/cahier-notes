@@ -39,14 +39,12 @@ class CustomMatiereListAdapter extends BaseAdapter {
         View view = mInflator.inflate(R.layout.activity_main, null);
 
         //Récupération des éléments de la vue du book list item
-        TextView nomTextView = view.findViewById(R.id.editTextNom);
-        TextView noteTextView = view.findViewById(R.id.editTextNote);
+
 
         Matiere selectedMatiere = matieres.get(position);
 
         //En fonction de la position qui est réçue en paramètre, nous allons chercher le nom et le prix a cette position
-        nomTextView.setText(selectedMatiere.getNom());
-        noteTextView.setText(String.valueOf(selectedMatiere.getNote()));
+
 
         return view;
     }
